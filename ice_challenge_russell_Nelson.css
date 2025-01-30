@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#content{
+    background-size: 50% ;
+    background-color: rgb(80, 178, 207);
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    color:white;
+    text-align: center;
+}
+h2{
+    color:white;
+    text-align: center;
+}
+#steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1:hover{
+    color:black;
+}
+h5{
+    color: white;
+    text-align: center;
+     font-size: 30px;
+}
+h4{
+    text-align: center;
+}
+
+img{
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
