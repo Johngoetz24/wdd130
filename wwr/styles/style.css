@@ -1,4 +1,6 @@
 
+/* @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet');*/
+
 #content{
     max-width: 1600px;
     margin: 0 auto ;
@@ -8,6 +10,8 @@ nav a{
     text-align: center;
     color: black;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 35px;
 }
 #hero-msg{
     text-align: center;
@@ -15,6 +19,7 @@ nav a{
  
 h1{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 
 } 
 #hero-msg{
@@ -23,6 +28,7 @@ h1{
 h4{
     text-align: center;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .button-box{
     text-align: center;
@@ -32,9 +38,14 @@ main section{
 }
 #background {
     height: 725px;
+
 }
 body{
     background-color: #94B9AF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: burlywood;
@@ -47,11 +58,21 @@ nav a:hover{
     background-color: burlywood;
     color: black;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 } 
 .join {
     background-color: aquamarine;
     color: black;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover{
     background-color: cadetblue;
@@ -63,33 +84,52 @@ nav a:hover{
 }
 #background{
     background-color: lightblue;
+    margin-bottom: 50px;
 }
 .msg{
     background-color: yellow;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 50px;
 }
 footer{
     background-color: rgb(196, 108, 0);
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title{
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h2{
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 p{
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
+
 }
 footer a{
     color: aliceblue;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer a:hover{
     color: cadetblue;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo{
     width: 80px;
@@ -103,3 +143,21 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }   
+#logo_link{
+    padding-top: 5px;
+}
+footer .social img{
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid black;
+}
+main section img {
+    box-sizing: border-box;
+}
+#mountains{
+    margin: 50px;
+}

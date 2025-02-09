@@ -1,0 +1,14 @@
+#content {
+    text-align: center;
+  }
+
+.three_picture{
+    width: 100px;
+    margin: 100px ;
+    border-radius: 70%;
+    border: 10px solid #555;
+}
+
+footer{
+    background-color: grey;
+}
