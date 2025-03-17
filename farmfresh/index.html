@@ -80,6 +80,21 @@
         </section>
 
     </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const learnMoreButton = document.querySelector('.learn-more-button');
+        const learnMoreContent = document.querySelector('.learn-more-content');
+      
+        learnMoreButton.addEventListener('click', function() {
+          if (learnMoreContent.style.display === 'none') {
+            learnMoreContent.style.display = 'block';
+            learnMoreButton.textContent = 'Show Less';
+          } else {
+            learnMoreContent.style.display = 'none';
+            learnMoreButton.textContent = 'Learn More';
+          }
+        });
+      });</script>
   </div>
     <footer>
         <a id="logo_link" href="index.html"></a>
