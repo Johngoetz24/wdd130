@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Check</title>
+</head>
+<body>
+    <h1>Password Check</h1>
+    <form id="password-form">
+        <label for="password">Enter Password: </label>
+        <input type="password" id="password" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+<script>{
+document.getElementById('password-form').addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent form from submitting normally
+    
+    // Get the value from the password input
+    const userPassword = document.getElementById('password').value;
+    
+    // Hardcoded correct password (this could be replaced with a password from a file on the backend)
+    const correctPassword = 'secret123';
+    
+    // Check if the entered password matches the correct password
+    if (userPassword === correctPassword) {
+        document.getElementById('result').textContent = 'Password is correct!';
+    } else {
+        document.getElementById('result').textContent = 'Incorrect password, please try again.';
+    }
+});
+}
+</script>
+</html>

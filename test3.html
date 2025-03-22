@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Check</title>
+</head>
+<body>
+    <h1>Password Check</h1>
+    <form id="password-form">
+        <label for="password">Enter Password: </label>
+        <input type="password" id="password" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('password-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get the user input password
+            const userPassword = document.getElementById('password').value;
+
+            // Fetch the password from a text file on the server
+            fetch('file-input.txt') 
+            // Split the file content into lines
+        const lines = data.split('\n');
+        
+        // Loop through the lines and check if any matches the input variable
+        let matchFound = false;
+        for (let line of lines) {
+            if (line.trim() === inputVariable) {
+                matchFound = true;
+                break;
+            }
+        }
+
+        // Return the result
+        if (matchFound) {
+            res.json({ result: 'The text is a match!' });
+        } else {
+            res.json({ result: 'No match found.' });
+        } // Replace with the actual URL to your text file
+                .then(response => response.text())  // Get text content of the file
+                .then(fileContent => {
+                    const storedPassword = fileContent.trim();  // Trim any extra spaces
+
+                    // Compare the file content (password from the file) with the user input password
+                    if (storedPassword === userPassword) {
+                        document.getElementById('result').textContent = 'Password is correct!';
+                    } else {
+                        document.getElementById('result').textContent = 'Incorrect password, please try again.';
+                    }
+                })
+                .catch(err => {
+                    document.getElementById('result').textContent = 'Error fetching the password file.';
+                    console.error('Error fetching password file:', err);
+                });
+        });
+    </script>
+</body>
+</html>
