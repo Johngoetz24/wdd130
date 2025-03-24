@@ -85,7 +85,7 @@ body{
 /* Hide all images by default */
 .image-gallery li {
     opacity: 0;
-    transform: translateX(100%);  /* Start off-screen to the right */
+    transform: translateX(-100%);  /* Start off-screen to the right */
     transition: opacity 1s ease, transform 1s ease;
      /* Position images off-screen */
 }
@@ -98,8 +98,6 @@ body{
 
 .learn-more-box {
     /* Add your desired box styles here */
-    border: 1px solid #ccc;
-    padding: 10px;
     margin-bottom: 20px;
   }
   
@@ -107,17 +105,87 @@ body{
     /* Style the hidden content */
     /* Initially hidden */
     display: none;
+    padding-left: 20%;
+    padding-right: 20%;
   }
   
   .learn-more-button {
     /* Style the button */
     background-color: #4CAF50;
     color: white;
-    padding: 8px 16px;
     text-decoration: none;
     cursor: pointer;
   }
 
+
+  
+#introduction{
+    margin: 10%;
+    text-align: center;
+}
+
+.home-grid{
+    display:grid;
+    grid-template-columns:  3fr 1fr 3fr;
+    margin: 100px;
+    justify-content: center; /* centers items horizontally */
+    align-items: center; /* centers items vertically */
+}
+
+.social_event-card{
+    padding: 10%;
+    width: 70%;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-content: space-evenly;
+}
+
+.floating-light{
+    width: 50%;
+
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+   
+}
+#road-market{
+    margin: 20%;
+    width: 70%;
+    grid-column:3/4;
+    grid-row: 2/3; 
+}
+.vendors-card{
+    margin: 10%;
+    width: 100%;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-content: space-evenly;
+}
+
+.card-img{
+    margin: 100px;
+    width: 100%;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 3/5;
+    z-index: -1;
+}
+
+#background{
+    background-color: rgb(255, 148, 49);
+    width: 700px;
+    height: 450px;
+    grid-column: 2/4;
+    grid-row: 4/6; 
+}
+.question-card{
+    text-align: center;
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 4/5; 
+}
 
 footer {
 

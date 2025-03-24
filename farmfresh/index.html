@@ -34,52 +34,50 @@
         <p>At the Farmers Market, we are dedicated to fostering a vibrant community by connecting people to local, sustainable food and unique products. Through curated social events and dynamic experiences, we showcase the hard work and creativity of our vendors, while building a space where neighbors come together to celebrate, shop, and share in the joy of fresh, locally grown produce and handmade goods.</p>
     </div>
     <main class="home-grid">
-        <section class="social_event-card">
-            <img class="card-img" src="images/light_event.jpg" alt="Floating Lights Event">
-            <h2>Social Events</h2>
-            <p>If you are looking for some local fun, some of our local events are for you! Every week we run three different activites ranging from firework shows to food parties. Come see what events we have to offer!</p>
-            <div class='button-box'>
-                <a class='event_button' href="events.html">Learn More</a>
-            </div>
+            <img class="floating-light" src="images/light_event.jpg" alt="Floating Lights Event">
+
+            <section class="social_event-card">
+             <h2>Social Events</h2>
+             <p>If you are looking for some local fun, some of our local events are for you! Every week we run three different activites ranging from firework shows to food parties. Come see what events we have to offer!</p>
+             <div class='button-box'>
+                 <a class='event_button' href="events.html">Learn More</a>
+             </div>
         </section>
-        <section class="vendors-card"></section>
+        <section class="vendors-card">
             <h2>Vendors</h2>
             <p>If you are looking for some local grown, fresh food? At our market, we invite our local farmers, florists, and artisans to bring only the best for you! We run 11 different stalls which provide you a diverse shoping experience. All our vendors come from different backgrounds which allows for a greater diversity in products. Hungry? We have food stalls for you. Need a fresh fruit or vegetable? We have vendors for that. Looking for something nice? We have amazing artisan Booths for you. See what our venders have to offer to you!</p>
             <div class='button-box'>
                 <a class='vendors_button' href="vendors.html">Learn More</a>
             </div>
-            <img class="card-img" src="images/road-farmers-market.jpg" alt="Walking through vendors">
-        </section>
-        <div id=" background"></div>
-        </div>
+          </section>
+            <img id="road-market" src="images/road-farmers-market.jpg" alt="Walking through vendors">
 
-        <section class="question-card"></section>
-            <img class="card-img" src="images/food_stall.jpg" alt="Food stall">
+        <div id="background">
+        </div>
+         <img class="card-img" src="images/food_stall.jpg" alt="Food stall">
+          <section class="question-card">
             <h2>More Questions?</h2>
-            <div class="learn-more-box1">
+                <div class="learn-more-box">
                 <p>Where are we located?</p>
-                <div class="learn-more-content" style="display: none;">
+                <div class="learn-more-content" >
                   <p>We are located at Main and Sesame street. We have parking next to our enterance and we are open everyday from 7am to 7pm</p>
                 </div>
                 <button class="learn-more-button">Learn More</button>
               </div>
-              <div class="learn-more-box2"></div>
+              <div class="learn-more-box"></div>
                 <p>Are you Cash only?</p>
-                <div class="learn-more-content" style="display: none;">
+                <div class="learn-more-content" >
                   <p>All of our vendors take cash and card. All card transcations will have a .4% fee. If you need cash also have two ATM machines on site. </p>
                 </div>
                 <button class="learn-more-button">Learn More</button>
-              </div>
-              <div class="learn-more-box3"></div>
+               <div class="learn-more-box3"></div>
                 <p>Are you pet friendly?</p>
-                <div class="learn-more-content" style="display: none;">
+                <div class="learn-more-content" >
                   <p>Your family is our family! We would love to have all of your family members (including your pet) to join us. As long as your pet is on a leash, you are more than welcome to bring them!</p>
                 </div>
                 <button class="learn-more-button">Learn More</button>
-              </div>
         </section>
-
-    </main>
+      </main>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const learnMoreButton = document.querySelector('.learn-more-button');
@@ -99,14 +97,14 @@
       <script>
         //This to make hero slide
         let currentIndex = 0;
-const slides = document.querySelectorAll('#hero .image-gallery ul li');
-const totalSlides = slides.length;
+         const slides = document.querySelectorAll('#hero .image-gallery ul li');
+          const totalSlides = slides.length;
 
-// Initially, display the first image
-slides[currentIndex].classList.add('active');
+           // Initially, display the first image
+          slides[currentIndex].classList.add('active');
 
-// Function to show the next slide
-function showNextSlide() {
+                // Function to show the next slide
+          function showNextSlide() {
     // Remove 'active' from the current slide and add the 'inactive' class to slide it out
     slides[currentIndex].classList.remove('active');
     slides[currentIndex].classList.add('inactive');
@@ -117,16 +115,14 @@ function showNextSlide() {
     // Add 'active' to the next image and remove the 'inactive' class
     slides[currentIndex].classList.add('active');
     slides[currentIndex].classList.remove('inactive');
-}
-
-// Set interval to automatically change the image every 3 seconds
-setInterval(showNextSlide, 4000);
+      }   
+          // Set interval to automatically change the image every 3 seconds
+          setInterval(showNextSlide, 4000);
       </script>
-  </div>
+
     <footer>
-        <a id="logo_link" href="index.html"></a>
+        <a  href="index.html"></a>
             <img class="logo" src="images/farmer_logo_hex.png" alt="Farmers Market Logo">
-        </a>
     <a href="social_events.html">Events</a>
     <a href="vendors.html">Vendors</a>
     <a href="contactus.html">Contact Us</a>
@@ -143,5 +139,6 @@ setInterval(showNextSlide, 4000);
         </a>
       </div>
     </footer>
+   </div>
 </body>
 </html>
