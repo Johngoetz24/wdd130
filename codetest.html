@@ -14,11 +14,29 @@
         <button type="submit">Submit</button>
     </form>
     <p id="result"></p>
+    <input type="file" id="file-Input" />
+<pre id="file-input"></pre>
 
     <script src="script.js"></script>
 </body>
 <script>{
-document.getElementById('password-form').addEventListener('submit', function(event) {
+    document.getElementById('file-Input').addEventListener('change', function(event) {
+    const file = event.target.files[0]; // Get the first selected file
+    if (file) {
+        const reader = new FileReader();
+
+        // Define the function that will run when the file is read
+        reader.onload = function(e) {
+            const content = e.target.result; // This is the file content
+            document.getElementById('file-input').textContent = content;
+            system.out.ln.print(content)
+        };
+
+        // Read the file as text
+        reader.readAsText(file);
+    }
+});
+    document.getElementById('password-form').addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent form from submitting normally
     
     // Get the value from the password input
