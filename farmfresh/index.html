@@ -40,42 +40,41 @@
              <h2>Social Events</h2>
              <p>If you are looking for some local fun, some of our local events are for you! Every week we run three different activites ranging from firework shows to food parties. Come see what events we have to offer!</p>
              <div class='button-box'>
-                 <a class='event_button' href="events.html">Learn More</a>
+                 <a class='button' href="social_events.html">Learn More</a>
              </div>
         </section>
         <section class="vendors-card">
             <h2>Vendors</h2>
-            <p>If you are looking for some local grown, fresh food? At our market, we invite our local farmers, florists, and artisans to bring only the best for you! We run 11 different stalls which provide you a diverse shoping experience. All our vendors come from different backgrounds which allows for a greater diversity in products. Hungry? We have food stalls for you. Need a fresh fruit or vegetable? We have vendors for that. Looking for something nice? We have amazing artisan Booths for you. See what our venders have to offer to you!</p>
+            <p>If you are looking for some local grown, fresh food? At our market, we invite our local farmers, florists, and artisans to bring only the best for you! We run 11 different stalls which provide you a diverse shoping experience. All our vendors come from different backgrounds which allows for a greater diversity in products. Hungry? We have food stalls for you. Need a fresh fruit or vegetable? We have vendors for that. Looking for something nice? We have amazing artisan booths for you. See what our venders have to offer to you!</p>
             <div class='button-box'>
-                <a class='vendors_button' href="vendors.html">Learn More</a>
+                <a class='button' href="vendors.html">Learn More</a>
             </div>
           </section>
-            <img id="road-market" src="images/road-farmers-market.jpg" alt="Walking through vendors">
+         <img id="road-market" src="images/road-farmers-market.jpg" alt="Walking through vendors">
 
-        <!-- <div id="background"> -->
-        <!-- </div> -->
          <img class="card-img" src="images/food_stall.jpg" alt="Food stall">
+
           <section class="question-card">
             <h2>More Questions?</h2>
                 <div class="learn-more-box">
                 <p>Where are we located?</p>
                 <div class="learn-more-content" >
-                  <p>We are located at Main and Sesame street. We have parking next to our enterance and we are open everyday from 7am to 7pm</p>
+                  <p>We are located at Main and Sesame street. We have parking next to our enterance and we are open everyday from 7am to 7pm.</p>
                 </div>
                 <button class="learn-more-button">Learn More</button>
               </div>
-              <div class="learn-more-box"></div>
-                <p>Are you Cash only?</p>
-                <div class="learn-more-content" >
+              <div class="learn-more-box2"></div>
+                <p>Are you cash only?</p>
+                <div class="learn-more-content2" >
                   <p>All of our vendors take cash and card. All card transcations will have a .4% fee. If you need cash also have two ATM machines on site. </p>
                 </div>
-                <button class="learn-more-button">Learn More</button>
+                <button class="learn-more-button2">Learn More</button>
                <div class="learn-more-box3"></div>
                 <p>Are you pet friendly?</p>
-                <div class="learn-more-content" >
+                <div class="learn-more-content3" >
                   <p>Your family is our family! We would love to have all of your family members (including your pet) to join us. As long as your pet is on a leash, you are more than welcome to bring them!</p>
                 </div>
-                <button class="learn-more-button">Learn More</button>
+                <button class="learn-more-button3">Learn More</button>
         </section>
       </main>
     <script>
@@ -92,7 +91,41 @@
             learnMoreButton.textContent = 'Learn More';
           }
         });
-      });</script>
+      });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreButton = document.querySelector('.learn-more-button2');
+            const learnMoreContent = document.querySelector('.learn-more-content2');
+          
+            learnMoreButton.addEventListener('click', function() {
+              if (learnMoreContent.style.display === 'none') {
+                learnMoreContent.style.display = 'block';
+                learnMoreButton.textContent = 'Show Less';
+              } else {
+                learnMoreContent.style.display = 'none';
+                learnMoreButton.textContent = 'Learn More';
+              }
+            });
+          });
+          </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const learnMoreButton = document.querySelector('.learn-more-button3');
+                const learnMoreContent = document.querySelector('.learn-more-content3');
+              
+                learnMoreButton.addEventListener('click', function() {
+                  if (learnMoreContent.style.display === 'none') {
+                    learnMoreContent.style.display = 'block';
+                    learnMoreButton.textContent = 'Show Less';
+                  } else {
+                    learnMoreContent.style.display = 'none';
+                    learnMoreButton.textContent = 'Learn More';
+                  }
+                });
+              });
+              </script>
+
 
       <script>
         //This to make hero slide
@@ -121,12 +154,13 @@
       </script>
 
     <footer>
-        <a  href="index.html"></a>
+        <a  id="logo_link" href="index.html">
             <img class="logo" src="images/farmer_logo_hex.png" alt="Farmers Market Logo">
-    <a href="social_events.html">Events</a>
-    <a href="vendors.html">Vendors</a>
-    <a href="contactus.html">Contact Us</a>
-    <a href="be_a_vendor.html">Join our team</a>
+          </a>
+    <a  href="social_events.html">Events</a>
+    <a  href="vendors.html">Vendors</a>
+    <a  href="contactus.html">Contact Us</a>
+    <a  href="be_a_vendor.html">Join our team</a>
     <div class="social">
         <a href="https://facebook.com" target = "_blank">
             <img src="images/facebook.png" alt="fb icon">
