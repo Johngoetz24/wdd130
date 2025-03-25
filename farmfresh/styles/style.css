@@ -1,4 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet');*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 header {
     display: grid;
@@ -15,7 +17,7 @@ header {
 }
 
 .logo{
-    width: 80px;
+    width: 85px;
 }
 
 nav {
@@ -186,6 +188,12 @@ body{
     margin-right: 200px;
     text-align: center;
 }
+#introfuction p{
+    font-family: Arial;
+}
+#introfuction h1{
+    font-family: roboto;
+}
 
 .home-grid{
     display:grid;
@@ -202,6 +210,12 @@ body{
     grid-column: 2/4;
     grid-row: 1/2;
 
+}
+.social_event-card p{
+    font-family: Arial;
+}
+.social_event-card h2{
+    font-family: roboto;
 }
 
 .floating-light{
@@ -225,6 +239,12 @@ body{
     grid-row: 2/3;
 
 }
+.vendors-card p{
+font-family: Arial;
+}
+.vendors-card h2{
+    font-family: roboto;
+}
 
 .card-img{
     width: 100%;
@@ -245,7 +265,12 @@ body{
     border-color: black;
     /* box-shadow: 2px 2px; */
 }
-
+.question-card p{
+    font-family: Arial;
+}
+.question-card h2{
+    font-family: roboto;
+}
 .button{
     margin-top: 1000px;
     background-color:  #f6e3c7;
