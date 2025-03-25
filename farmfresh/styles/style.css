@@ -30,8 +30,11 @@ nav a{
     text-align: center;
     color: #000000;
     text-decoration: none;
-    font-size: 26px;
-    padding: 30px;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 nav a:hover{
     background-color: #e36713;
@@ -50,7 +53,7 @@ body{
 #hero {
     position: relative;
     width: 100%;  /* Full width of the container */
-    height: 900px; /* Adjust as needed */
+    height: 700px; /* Adjust as needed */
     overflow: hidden; /* Hide any images off the screen */
 }
 
