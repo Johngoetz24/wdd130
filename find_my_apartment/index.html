@@ -21,7 +21,7 @@
     </header>
     <div id="hero">
         <section class="video-card">
-            <video width="100%" height="100%" autoplay loop controls>
+            <video autoplay controls loop muted>
                 <source src="images/apartment_video.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video>
@@ -169,33 +169,6 @@
                 });
               });
               </script>
-       <script>
-        //This to make hero slide
-        let currentIndex = 0;
-         const slides = document.querySelectorAll('#hero .image-gallery ul li');
-          const totalSlides = slides.length;
-
-           // Initially, display the first image
-          slides[currentIndex].classList.add('active');
-
-                // Function to show the next slide
-          function showNextSlide() {
-    // Remove 'active' from the current slide and add the 'inactive' class to slide it out
-    slides[currentIndex].classList.remove('active');
-    slides[currentIndex].classList.add('inactive');
-
-    // Move to the next image, looping back to the first one if necessary
-    currentIndex = (currentIndex + 1) % totalSlides;
-
-    // Add 'active' to the next image and remove the 'inactive' class
-    slides[currentIndex].classList.add('active');
-    slides[currentIndex].classList.remove('inactive');
-      }   
-          // Set interval to automatically change the image every 3 seconds
-          setInterval(showNextSlide, 4000);
-      </script>
-
-
 
     <footer>
         <a   href="index.html">

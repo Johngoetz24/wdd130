@@ -40,10 +40,13 @@ nav a:hover{
 
 #hero {
     width: 100%;  /* Full width of the container */
-    height: 700px; /* Adjust as needed */
-    overflow: hidden; /* what is this doing? */
+    height: 700px; /*Adjust as needed */
+    overflow: hidden; /*what is this doing?  */
 }
 
+video {
+  
+}
 body{
     background-color: #cec6bb;
     font-family: Arial, Helvetica, sans-serif;
