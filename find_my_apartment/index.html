@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Farmers Market | Vendors | Fun</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Find My Apartment Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sell-apartment.html">Sell Apartment</a>
+            <a href="new-complex.html">New Complex</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <div id="hero">
+        <section class="video-card">
+            <video width="100%" height="100%" autoplay loop controls>
+                <source src="images/apartment_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+
+        </section>   
+    </div>
+    <div id = "introduction">
+        <h1 class="home-title">Looking for an Apartment?</h1>
+        <p>Our mission is to empower college students by providing a platform that connects them with the most affordable and reliable apartment options, ensuring they can focus on their studies without the stress of high housing costs. We strive to make finding budget-friendly living solutions simple, transparent, and accessible for students everywhere.</p>
+    </div>
+    <main class="home-grid">
+        <div id = "words">
+            <h2>Biggest deals for fall semster:</h2>
+        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner" >
+              <div class="flip-box-front">
+                <img src="images/northpoint_cover.jpg" alt="North Point Building" style="width:450px;height:350px">
+              </div>
+              <div class="flip-box-back">
+                <img src="images/floorplan_northpoint.jpg" alt="North Point Building" style="width:450px;height:350px">
+              </div>
+            </div>
+          </div>
+            <section class="north-point">
+             <h2>NorthPoint Apartments</h2>
+             <h3>$100 off each semester</h3>
+             <p>NorthPoint Apartments is Rexburg's preferred student housing location. Across the street from BYU-I's campus, our apartments offer convenience and proximity for any student. Enjoy a homecooked meal in our spacious kitchens, or treat yourself in our onsite food court. Multiple floorplan options, luxury amenities, and a vibrant community atmosphere. NorthPoint is proud to offer BYU-I approved men and women's housing.</p>
+             <div class='button-box'>
+                 <a class='button' href="https://www.northpointrexburg.com/">Visit NorthPoint</a>
+             </div>
+        </section>
+        <div class="flip-box2">
+            <div class="flip-box-inner2" >
+              <div class="flip-box-front">
+                <img src="images/Lodge_cover.jpeg" alt="Lodge Building" style="width:450px;height:350px">
+              </div>
+              <div class="flip-box-back">
+                <img src="images/floorplan_lodge.jpg" alt="Lodge Building" style="width:450px;height:350px">
+              </div>
+            </div>
+          </div>
+        <section class="lodge">
+            <h2>The Lodge</h2>
+            <h3>$50 off each semester + $100 off if you bring a friend</h3>
+            <p>The Lodge is designed to provide the perfect environment to ensure your BYU-I academic experience is a time of learning, shared responsibility, mutual respect, friendships and memories that will last a lifetime.</p>
+            <div class='button-box'>
+                <a class='button' href="https://rexburglodge.com/">Visit The Lodge</a>
+            </div>
+          </section>
+
+          <div class="flip-box3">
+            <div class="flip-box-inner3" >
+              <div class="flip-box-front">
+                <img src="images/cedars_cover.jpg" alt="Cedars Building" style="width:450px;height:350px">
+              </div>
+              <div class="flip-box-back">
+                <img src="images/floorplan_cedars.jpg" alt="Cedars Building" style="width:450px;height:350px">
+              </div>
+            </div>
+          </div>
+        <section class="cedars">
+            <h2>Cedars</h2>
+            <h3>$100 off each semester</h3>
+            <p>The Cedars are modern BYU-Idaho approved student housing complexes for men and women located in Hemming Village in Rexburg, Idaho. Situated within walking distance of campus and many local shops and restaurants, The Cedars is the perfect place to live while going to school. With state-of-the-art amenities and modern-style living, we guarantee that your time at the Cedars will be your favorite student housing experience yet!</p>
+            <div class='button-box'>
+                <a class='button' href="https://cedarshousing.com/">Visit Cedars</a>
+            </div>
+          </section>
+
+
+
+          <section class="question-card">
+            <h2>Commonly Asked Questions</h2>
+                <div class="learn-more-box">
+                <p>When should I book my apartment?</p>
+                <div class="learn-more-content" >
+                  <p>As soon as possible! Most apartment complexes will give you a discount as long as you reserve your spot two months before the semester begins. Also a lot of complexes book up quickly so it would be better to book your spot when they have space.</p>
+                </div>
+                <button class="learn-more-button">Learn More</button>
+              </div>
+              <div class="learn-more-box2"></div>
+                <p>What should I do about parking?</p>
+                <div class="learn-more-content2" >
+                  <p>Call your complex as soon as possible. There are limited parking spots, so it would be best to check with your complex if they have any parking spots available.</p>
+                </div>
+                <button class="learn-more-button2">Learn More</button>
+               <div class="learn-more-box3"></div>
+                <p>How can I room with my friends?</p>
+                <div class="learn-more-content3" >
+                  <p>Friends are family! All apartment complexes want to room you with your firends. Just give a call after you book an room and request that your room will be filled with your friend!</p>
+                </div>
+                <button class="learn-more-button3">Learn More</button>
+            </section>
+                <div id = "finalpic">
+                    <img src="images/campus.jpeg" alt="Picture of BYUI campus">
+                </div>
+       
+      </main>
+    <script>
+    // document.addEventListener('DOMContentLoaded', function() {
+        const learnMoreButton = document.querySelector('.learn-more-button');
+        const learnMoreContent = document.querySelector('.learn-more-content');
+      
+        learnMoreButton.addEventListener('click', function() {
+          if (learnMoreContent.style.display === 'none') {
+            learnMoreContent.style.display = 'block';
+            learnMoreButton.textContent = 'Show Less';
+          } else {
+            learnMoreContent.style.display = 'none';
+            learnMoreButton.textContent = 'Learn More';
+          }
+        });
+      // });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const learnMoreButton = document.querySelector('.learn-more-button2');
+            const learnMoreContent = document.querySelector('.learn-more-content2');
+          
+            learnMoreButton.addEventListener('click', function() {
+              if (learnMoreContent.style.display === 'none') {
+                learnMoreContent.style.display = 'block';
+                learnMoreButton.textContent = 'Show Less';
+              } else {
+                learnMoreContent.style.display = 'none';
+                learnMoreButton.textContent = 'Learn More';
+              }
+            });
+          });
+          </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const learnMoreButton = document.querySelector('.learn-more-button3');
+                const learnMoreContent = document.querySelector('.learn-more-content3');
+              
+                learnMoreButton.addEventListener('click', function() {
+                  if (learnMoreContent.style.display === 'none') {
+                    learnMoreContent.style.display = 'block';
+                    learnMoreButton.textContent = 'Show Less';
+                  } else {
+                    learnMoreContent.style.display = 'none';
+                    learnMoreButton.textContent = 'Learn More';
+                  }
+                });
+              });
+              </script>
+       <script>
+        //This to make hero slide
+        let currentIndex = 0;
+         const slides = document.querySelectorAll('#hero .image-gallery ul li');
+          const totalSlides = slides.length;
+
+           // Initially, display the first image
+          slides[currentIndex].classList.add('active');
+
+                // Function to show the next slide
+          function showNextSlide() {
+    // Remove 'active' from the current slide and add the 'inactive' class to slide it out
+    slides[currentIndex].classList.remove('active');
+    slides[currentIndex].classList.add('inactive');
+
+    // Move to the next image, looping back to the first one if necessary
+    currentIndex = (currentIndex + 1) % totalSlides;
+
+    // Add 'active' to the next image and remove the 'inactive' class
+    slides[currentIndex].classList.add('active');
+    slides[currentIndex].classList.remove('inactive');
+      }   
+          // Set interval to automatically change the image every 3 seconds
+          setInterval(showNextSlide, 4000);
+      </script>
+
+
+
+    <footer>
+        <a   href="index.html">
+            <img class="logo" src="images/logo.png" alt="Find My Apartment Logo">
+          </a>
+          <a href="index.html">Home</a>
+          <a href="sell-apartment.html">Sell Apartment</a>
+          <a href="new-complex.html">New Complex</a>
+          <a href="contactus.html">Contact Us</a>
+    <div class="social">
+        <a href="https://facebook.com" target = "_blank">
+            <img src="images/facebook.png" alt="Facebook icon">
+        </a>
+        <a href="https://twitter.com" target = "_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target = "_blank">
+            <img src="images/instagram.png" alt="Instagram icon">
+        </a>
+      </div>
+    </footer>
+   </div>
+</body>
+</html>
