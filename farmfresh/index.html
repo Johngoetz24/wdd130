@@ -56,79 +56,50 @@
          <img id="road-market" src="images/road-farmers-market.jpg" alt="Walking through vendors">
 
          <img class="card-img" src="images/food_stall.jpg" alt="Food stall">
+        <section class="question-card">
+          <h2>More Questions?</h2>
+          <div class="learn-more-box">
+          <p>Where are we located?</p>
+          <div class="learn-more-content" >
+          <p>We are located at Main and Sesame street. We have parking next to our enterance and we are open everyday from 7am to 7pm</p>
+          </div>
+          <button class="learn-more-button">Learn More</button>
+          </div>
+          <div class="learn-more-box"></div>
+          <p>Are you Cash only?</p>
+          <div class="learn-more-content" >
+          <p>All of our vendors take cash and card. All card transcations will have a .4% fee. If you need cash also have two ATM machines on site. </p>
+          </div>
+          <button class="learn-more-button">Learn More</button>
+          <div class="learn-more-box"></div>
+          <p>Are you pet friendly?</p>
+          <div class="learn-more-content" >
+          <p>Your family is our family! We would love to have all of your family members (including your pet) to join us. As long as your pet is on a leash, you are more than welcome to bring them!</p>
+          </div>
+          <button class="learn-more-button">Learn More</button>
+          </section>
 
-          <section class="question-card">
-            <h2>More Questions?</h2>
-                <div class="learn-more-box">
-                <p>Where are we located?</p>
-                <div class="learn-more-content" >
-                  <p>We are located at Main and Sesame street. We have parking next to our enterance and we are open everyday from 7am to 7pm.</p>
-                </div>
-                <button class="learn-more-button">Learn More</button>
-              </div>
-              <div class="learn-more-box2"></div>
-                <p>Are you cash only?</p>
-                <div class="learn-more-content2" >
-                  <p>All of our vendors take cash and card. All card transcations will have a .4% fee. If you need cash also have two ATM machines on site. </p>
-                </div>
-                <button class="learn-more-button2">Learn More</button>
-               <div class="learn-more-box3"></div>
-                <p>Are you pet friendly?</p>
-                <div class="learn-more-content3" >
-                  <p>Your family is our family! We would love to have all of your family members (including your pet) to join us. As long as your pet is on a leash, you are more than welcome to bring them!</p>
-                </div>
-                <button class="learn-more-button3">Learn More</button>
-        </section>
+
+
+
+
       </main>
-    <script>
-    // document.addEventListener('DOMContentLoaded', function() {
-        const learnMoreButton = document.querySelector('.learn-more-button');
-        const learnMoreContent = document.querySelector('.learn-more-content');
-      
-        learnMoreButton.addEventListener('click', function() {
-          if (learnMoreContent.style.display === 'none') {
-            learnMoreContent.style.display = 'block';
-            learnMoreButton.textContent = 'Show Less';
-          } else {
-            learnMoreContent.style.display = 'none';
-            learnMoreButton.textContent = 'Learn More';
-          }
-        });
-      // });
-      </script>
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const learnMoreButton = document.querySelector('.learn-more-button2');
-            const learnMoreContent = document.querySelector('.learn-more-content2');
-          
-            learnMoreButton.addEventListener('click', function() {
-              if (learnMoreContent.style.display === 'none') {
-                learnMoreContent.style.display = 'block';
-                learnMoreButton.textContent = 'Show Less';
-              } else {
-                learnMoreContent.style.display = 'none';
-                learnMoreButton.textContent = 'Learn More';
-              }
-            });
-          });
-          </script>
-          <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const learnMoreButton = document.querySelector('.learn-more-button3');
-                const learnMoreContent = document.querySelector('.learn-more-content3');
-              
-                learnMoreButton.addEventListener('click', function() {
-                  if (learnMoreContent.style.display === 'none') {
-                    learnMoreContent.style.display = 'block';
-                    learnMoreButton.textContent = 'Show Less';
-                  } else {
-                    learnMoreContent.style.display = 'none';
-                    learnMoreButton.textContent = 'Learn More';
-                  }
-                });
-              });
-              </script>
-       <script>
+        const buttons = document.querySelectorAll('.learn-more-button');
+        const contents = document.querySelectorAll('.learn-more-content');
+        
+        buttons.forEach((button, index) => {
+        const content = contents[index]; // Match each button with its corresponding content
+        button.addEventListener('click', function(){
+        if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        button.textContent = 'Show Less';
+        } else {
+        content.style.display = 'none';
+        button.textContent = 'Learn More';
+        }
+        });
+        });
         //This to make hero slide
         let currentIndex = 0;
          const slides = document.querySelectorAll('#hero .image-gallery ul li');
