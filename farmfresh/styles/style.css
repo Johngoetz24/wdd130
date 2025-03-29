@@ -191,10 +191,10 @@ body{
     margin-right: 200px;
     text-align: center;
 }
-#introfuction p{
+#introduction p{
     font-family: Arial;
 }
-#introfuction h1{
+#introduction h1{
     font-family: roboto;
 }
 
@@ -289,6 +289,91 @@ font-family: Arial;
     background-color: #90a993;
     color:  #035132;
 } 
+
+/* Social event page */
+
+#hero-social{
+    width: 100%;
+    height: 700px;
+}
+
+.social_event-grid{
+    display:grid;
+    grid-template-columns:  3fr 1fr 3fr;
+    margin: 100px;
+    justify-items: center; /* centers items horizontally */
+    align-items: center; 
+}
+.lights-img{
+    width: 90%;
+    grid-column: 1/3;
+    grid-row:1/3;
+    box-shadow: 2px 2px;
+}
+.food_event-card{
+    grid-column: 3/4;
+    grid-row:1/3;
+    text-align: center;
+}
+
+.band-img{
+    margin-top: 150px;
+    width: 90%;
+    grid-column: 1/3;
+    grid-row:4/6;
+    box-shadow: 2px 2px;
+}
+.band_event-card{
+    margin-top: 150px;
+    grid-column: 3/4;
+    grid-row:4/6;
+    text-align: center;
+}
+.dance-img{
+    margin-top: 150px;
+    grid-column: 1/3;
+    grid-row:8/9;
+    box-shadow: 2px 2px;
+}
+.dance_event-card{
+    margin-top: 50px;
+    grid-column: 3/4;
+    grid-row:8/9;
+    text-align: center;
+}
+.video-card{
+    margin: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    background-color: #024e30;
+    color:#98cd77;
+    grid-column: 1/4;
+    grid-row: 11;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.button-box{
+    margin-top:50px;
+}
+.event_button{
+    color:  black;
+    background-color: #f6ca9b;
+    color: #024e30;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.event_button:hover{
+    background-color: #90a993;
+    color:  #035132;
+} 
+
 
 footer {
     background-color: #99A98F;
