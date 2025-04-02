@@ -373,7 +373,104 @@ font-family: Arial;
     background-color: #90a993;
     color:  #035132;
 } 
-
+/* vendors page */
+#hero-vendor{
+    width: 100%;
+    height: 600px;
+}
+.hero_message_social{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+.vendor-grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr ;
+    margin: 150px;
+    justify-items: center; /* centers items horizontally */
+    align-items: center;
+}
+#vendor-all-images{
+    width: 400px;
+    height: 300px;border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.fruittastic{
+    grid-column: 1;
+    grid-row:1/2;
+    text-align: center;
+}
+.appleTruck{
+    grid-column: 3;
+    grid-row:1/2;
+    text-align: center;
+}
+.planttastic{
+    grid-column: 5;
+    grid-row:1/2;
+    text-align: center;
+}
+.greenThumb{
+    margin-top: 100px;
+    grid-column: 1;
+    grid-row:3/4;
+    text-align: center;
+}
+.seedTable{
+    margin-top: 100px;
+    grid-column: 3;
+    grid-row:3/4;
+    text-align: center;
+}
+.veggiePatch{
+    margin-top: 100px;
+    grid-column: 5;
+    grid-row:3/4;
+    text-align: center;
+}
+.ohHoney{
+    margin-top: 100px;
+    grid-column: 1;
+    grid-row:6/7;
+    text-align: center;
+}
+.natureSugar{
+    margin-top: 100px;
+    grid-column: 3;
+    grid-row:6/7;
+    text-align: center;
+}
+.wholesome{
+    margin-top: 100px;
+    grid-column: 5;
+    grid-row:6/7;
+    text-align: center;
+}
+.rustic{
+    margin-top: 100px;
+    grid-column: 1;
+    grid-row:9/10;
+    text-align: center;
+}
+.crafty{
+    margin-top: 100px;
+    grid-column: 3;
+    grid-row:9/10;
+    text-align: center;
+}
+.cart-card{
+    background-color: #015200;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    grid-column: 5;
+    grid-row:9/10;
+    text-align: center;
+}
 
 footer {
     background-color: #99A98F;
