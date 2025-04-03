@@ -39,6 +39,7 @@ nav a{
 nav a:hover{
     background-color: #e36713;
     color: #000000;
+    transition: 1s;
 }
 
 body{
@@ -368,10 +369,11 @@ font-family: Arial;
     border-radius: 5px;
     border-style: solid;
     border-color: black;
+    transition: 1s;
 }
 .event_button:hover{
     background-color: #90a993;
-    color:  #035132;
+    color:  #74256a;
 } 
 /* vendors page */
 #hero-vendor{
@@ -393,6 +395,7 @@ font-family: Arial;
     align-items: center;
 }
 #vendor-all-images{
+    margin-top: 100px;
     width: 400px;
     height: 300px;border-radius: 5px;
     border-style: solid;
@@ -414,55 +417,49 @@ font-family: Arial;
     text-align: center;
 }
 .greenThumb{
-    margin-top: 100px;
     grid-column: 1;
     grid-row:3/4;
     text-align: center;
 }
 .seedTable{
-    margin-top: 100px;
     grid-column: 3;
     grid-row:3/4;
     text-align: center;
 }
 .veggiePatch{
-    margin-top: 100px;
     grid-column: 5;
     grid-row:3/4;
     text-align: center;
 }
 .ohHoney{
-    margin-top: 100px;
     grid-column: 1;
     grid-row:6/7;
     text-align: center;
 }
 .natureSugar{
-    margin-top: 100px;
     grid-column: 3;
     grid-row:6/7;
     text-align: center;
 }
 .wholesome{
-    margin-top: 100px;
     grid-column: 5;
     grid-row:6/7;
     text-align: center;
 }
 .rustic{
-    margin-top: 100px;
     grid-column: 1;
     grid-row:9/10;
     text-align: center;
 }
 .crafty{
-    margin-top: 100px;
+    margin-top: -50px;
     grid-column: 3;
     grid-row:9/10;
     text-align: center;
 }
 .cart-card{
-    background-color: #015200;
+    margin-top: 100px;
+    background-color: #fbaf16;
     padding-left: 75px;
     padding-right: 75px;
     padding-bottom: 100px;
@@ -470,7 +467,27 @@ font-family: Arial;
     grid-column: 5;
     grid-row:9/10;
     text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
 }
+.reserve{
+    margin-top: 30px;
+    background-color: #f6ca9b;
+    color: #024e30;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.reserve:hover{
+    background-color: #90a993;
+    color:  #74256a;
+    transition: 1s;
+} 
+
 
 footer {
     background-color: #99A98F;
