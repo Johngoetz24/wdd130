@@ -175,14 +175,17 @@ body{
 .learn-more-button:hover{
     background-color: #90a993;
     color:  #74256a;
+    transition: 1s;
 } 
 .learn-more-button2:hover{
     background-color: #90a993;
     color:  #74256a;
+    transition: 1s;
 } 
 .learn-more-button3:hover{
     background-color: #90a993;
     color:  #74256a;
+    transition: 1s;
 } 
 
   
@@ -289,6 +292,7 @@ font-family: Arial;
 .button:hover{
     background-color: #90a993;
     color:  #035132;
+    transition: 1s;
 } 
 
 /* Social event page */
@@ -374,6 +378,7 @@ font-family: Arial;
 .event_button:hover{
     background-color: #90a993;
     color:  #74256a;
+    transition: 1s;
 } 
 /* vendors page */
 #hero-vendor{
@@ -395,9 +400,10 @@ font-family: Arial;
     align-items: center;
 }
 #vendor-all-images{
-    margin-top: 100px;
+    margin-top: 100px; 
     width: 400px;
-    height: 300px;border-radius: 5px;
+    height: 300px;
+    border-radius: 5px;
     border-style: solid;
     border-color: black;
 }
@@ -412,6 +418,7 @@ font-family: Arial;
     text-align: center;
 }
 .planttastic{
+    margin-top: -30px;
     grid-column: 5;
     grid-row:1/2;
     text-align: center;
@@ -427,11 +434,13 @@ font-family: Arial;
     text-align: center;
 }
 .veggiePatch{
+    margin-top: -20px;
     grid-column: 5;
     grid-row:3/4;
     text-align: center;
 }
 .ohHoney{
+    margin-top: -20px;
     grid-column: 1;
     grid-row:6/7;
     text-align: center;
@@ -459,7 +468,8 @@ font-family: Arial;
 }
 .cart-card{
     margin-top: 100px;
-    background-color: #fbaf16;
+    background-color: 
+    /* #2f674c */ #db9a88; 
     padding-left: 75px;
     padding-right: 75px;
     padding-bottom: 100px;
