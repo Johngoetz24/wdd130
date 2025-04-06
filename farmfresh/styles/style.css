@@ -481,22 +481,8 @@ font-family: Arial;
     border-style: solid;
     border-color: black;
 }
-.reserve{
-    margin-top: 30px;
-    background-color: #f6ca9b;
-    color: #024e30;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-}
-.reserve:hover{
-    background-color: #90a993;
-    color:  #74256a;
-    transition: 1s;
-} 
+
+
 
 
 footer {

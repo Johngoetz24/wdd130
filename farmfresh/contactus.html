@@ -37,11 +37,11 @@
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
               </p>
-            <p class="button">
+            <div class="button-contactus">
                 <button type="submit">Send your message</button>
-              </p>
+            </div>
             </form>
-              <!-- <style>
+             <style>
                 body {
                     
   /* Center the form on the page */
@@ -96,16 +96,26 @@ textarea {
   height: 5em;
 }
 
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
 
 button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 0.5em;
+  /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+  background-color: #f6ca9b;
+    color: #024e30;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
 }
+
+button:hover{
+      padding: 15px 30px;
+    background-color: #90a993;
+    color:  #74256a;
+    transition: 1s;
+} 
+
 #feedback {
     background-color: antiquewhite;
     position: absolute;
@@ -120,7 +130,7 @@ button {
     margin-top: 3em;
 }
                     
-              </style> -->
+              </style>
 
     </main>
     <footer>
