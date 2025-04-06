@@ -399,7 +399,7 @@ font-family: Arial;
     justify-items: center; /* centers items horizontally */
     align-items: center;
 }
-#vendor-all-images{
+.vendor-all-images{
     margin-top: 100px; 
     width: 400px;
     height: 300px;
