@@ -5,6 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Farmers Market | Vendors | Fun</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+      body {
+          
+  /* Center the form on the page */
+  text-align: center;
+  }
+  
+  
+  
+  form {
+  display: inline-block;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  }
+  
+  p + p {
+  margin-top: 1em;
+  }
+  
+  label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+  }
+  
+  input,
+  textarea {
+  /* To make sure that all text fields have the same font settings
+  By default, text areas have a monospace font */
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  /* Match form field borders */
+  border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+  /* Set the outline width and style */
+  outline-style: solid;
+  /* To give a little highlight on active elements */
+  outline-color: #000;
+  }
+  
+  textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+  }
+  
+  
+  button {
+  /* This extra margin represent roughly the same space as the space between the labels and their text fields */
+  background-color: #f6ca9b;
+  color: #024e30;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  }
+  
+  button:hover{
+  padding: 15px 30px;
+  background-color: #90a993;
+  color:  #74256a;
+  transition: 1s;
+  } 
+  
+  #feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+  }
+  .moveDown {
+  margin-top: 3em;
+  }       
+    </style>
 </head>
 <body>
   <div id="content">
@@ -27,11 +116,11 @@
         <form class="form" action="/contact-us-form-page" method="post">
             <p>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
+                <input type="text" id="name" name="user_name" >
               </p>
               <p>
                 <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
+                <input type="email" id="mail" name="user_email" >
               </p>
               <p>
                 <label for="msg">Message:</label>
@@ -41,100 +130,9 @@
                 <button type="submit">Send your message</button>
             </div>
             </form>
-             <style>
-                body {
-                    
-  /* Center the form on the page */
-  text-align: center;
-}
-
-
-
-form {
- display: inline-block;
-  /* Form outline */
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-}
-
-p + p {
-  margin-top: 1em;
-}
-
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  min-width: 90px;
-  text-align: right;
-}
-
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, text areas have a monospace font */
-  font: 1em sans-serif;
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-  /* Match form field borders */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Set the outline width and style */
-  outline-style: solid;
-  /* To give a little highlight on active elements */
-  outline-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-
-button {
-  /* This extra margin represent roughly the same space as the space between the labels and their text fields */
-  background-color: #f6ca9b;
-    color: #024e30;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: black;
-}
-
-button:hover{
-      padding: 15px 30px;
-    background-color: #90a993;
-    color:  #74256a;
-    transition: 1s;
-} 
-
-#feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;      
-}
-.moveDown {
-    margin-top: 3em;
-}
-                    
-              </style>
-
-    </main>
+          </main>
     <footer>
-        <a id="logo_link" href="index.html"></a>
+        <a href="index.html">
             <img class="logo" src="images/farmer_logo_hex.png" alt="Farmers Market Logo">
         </a>
     <a href="social_events.html">Events</a>
